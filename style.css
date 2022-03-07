@@ -1,0 +1,92 @@
+*{
+  font-family: font-light;
+  font-size: 16px;
+}
+.section1-button1{
+  border-radius: 30px !important;
+}
+.section1-button2{
+  border-radius: 30px !important;
+  border: none !important;
+  background: rgb(245,80,90);
+  background: linear-gradient(6deg, rgba(245,80,90,1) 30%, rgba(241,59,114,1) 56%);
+}
+.section3-button{
+  border-radius: 30px !important;
+  border: none !important;
+  background: rgb(245,80,90);
+  background: linear-gradient(6deg, rgba(245,80,90,1) 30%, rgba(241,59,114,1) 56%);
+}
+.section1-gradient{
+  min-height: 80vh;
+  background: rgb(21,39,92);
+  background: linear-gradient(97deg, rgba(21,39,92,1) 30%, rgba(23,23,57,1) 62%);
+}
+.section1-row{
+  margin-top: 5rem !important;
+}
+.section1-bgImg{
+  margin-left: -5rem;
+}
+.section3-bg{
+  background:#f4f7fb;
+  min-height: 60vh;
+}
+.section3-box{
+  border: 1px solid lightgrey;
+}
+.section4-gradient{
+  min-height: 50vh;
+  background: rgb(21,39,92);
+  background: linear-gradient(97deg, rgba(21,39,92,1) 30%, rgba(23,23,57,1) 62%);
+}
+.section5-button{
+  color: #eb0e57 !important;
+  border-color: #eb0e57 !important;
+  border-radius: 30px !important;
+}
+.section7-bg{
+  background-image: url('assets/meeting.png');
+  background-repeat: no-repeat;
+  min-height: 70vh;
+  margin: 5rem 0rem;
+}
+.section8{
+  min-height: 45vh;
+}
+.dot{
+  height: 25px;
+  width: 25px;
+  background-color:white;
+  border-radius: 50%;
+  display: inline-block;
+}
+h5{
+  color: #eb0e57;
+}
+.footerLists{
+  list-style-type: none;
+  padding: 0;
+}
+.footer-email input{
+  border: 1px solid black;
+  height: 3rem;
+  padding: 1.5rem;
+  border-radius: 2rem;
+}
+
+
+@font-face{
+  font-family: font-medium;
+  src: url(Josefin_Sans/static/JosefinSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: font-light;
+  src: url(Josefin_Sans/static/JosefinSans-Light.ttf);
+}
+
+@font-face {
+  font-family: font-regular;
+  src: url(Josefin_Sans/JosefinSans-Regular.ttf);
+}
