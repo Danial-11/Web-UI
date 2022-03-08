@@ -1,0 +1,242 @@
+* {
+  font-family: font-light;
+  font-size: 16px;
+}
+
+/* Section 1 Styling */
+.section1-button1 {
+  border-radius: 30px !important;
+  width: 150px !important;
+}
+.section1-button2 {
+  border-radius: 30px !important;
+  border: none !important;
+  background: rgb(245, 80, 90);
+  background: linear-gradient(
+    6deg,
+    rgba(245, 80, 90, 1) 30%,
+    rgba(241, 59, 114, 1) 56%
+  );
+}
+.section3-button {
+  border-radius: 30px !important;
+  border: none !important;
+  background: rgb(245, 80, 90);
+  background: linear-gradient(
+    6deg,
+    rgba(245, 80, 90, 1) 30%,
+    rgba(241, 59, 114, 1) 56%
+  );
+}
+.section1-gradient {
+  min-height: 65vh;
+  background: rgb(21, 39, 92);
+  background: linear-gradient(
+    97deg,
+    rgba(21, 39, 92, 1) 30%,
+    rgba(23, 23, 57, 1) 62%
+  );
+}
+.section1-row {
+  margin-top: 5rem !important;
+}
+.section1-bgImg {
+  margin-left: -5rem;
+}
+
+/* Section 3 Styling */
+.section3-bg {
+  background: #f4f7fb;
+  min-height: 40vh;
+}
+.section3-box {
+  height: 100px;
+  width: 100px;
+  border: 1px solid lightgrey;
+}
+.notification-banner {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  background-color: white;
+  border-radius: 6px;
+  width: 310px;
+  padding: 20px 0;
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.notification-banner div:first-of-type {
+  width: 50px;
+  height: 50px;
+  background-color: #fbe6f3;
+  border-radius: 50px;
+}
+
+.notification-banner p {
+  margin-bottom: 0;
+}
+
+/* Section 4 Styling */
+.section4-gradient {
+  min-height: 35vh;
+  background: rgb(21, 39, 92);
+  background: linear-gradient(
+    97deg,
+    rgba(21, 39, 92, 1) 30%,
+    rgba(23, 23, 57, 1) 62%
+  );
+}
+.section4-box {
+  border: 1px solid lightgrey;
+}
+
+/* Section 5 Styling*/
+.section5-button {
+  color: #eb0e57 !important;
+  border-color: #eb0e57 !important;
+  border-radius: 30px !important;
+}
+
+/* Section 6 Styling */
+.product-card-overlay {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(14, 12, 92, 0.35);
+  border-radius: 10px;
+  left: 0;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  color: white;
+  height: 100%;
+}
+
+.product-card-overlay p {
+  line-height: 1px;
+}
+
+.product-card-overlay > span {
+  border-radius: 100px;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  margin-bottom: 8px;
+}
+
+/* Section 7 Styling */
+.section7 {
+  background: url("assets/meeting.png") no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+  margin: 5rem 0rem;
+  position: relative;
+}
+.section7::before {
+  position: absolute;
+  top: 0;
+  display: block;
+  background: rgba(14, 12, 92, 0.5);
+  left: 0;
+  content: " ";
+  width: 100%;
+  height: 100%;
+}
+.section7-overlay div:first-of-type {
+  width: 80px;
+  height: 80px;
+  background: rgb(245, 80, 90);
+  background: linear-gradient(
+    6deg,
+    rgba(245, 80, 90, 1) 30%,
+    rgba(241, 59, 114, 1) 56%
+  );
+  border-radius: 50px;
+  border: 1px solid white;
+}
+.section7-button {
+  border-radius: 30px !important;
+  border: none !important;
+}
+/* section 8 Styling */
+.section8 {
+  min-height: 30vh;
+}
+.footerLists {
+  list-style-type: none;
+  padding: 0;
+}
+.footer-email {
+  border: 1px solid black;
+  height: 3rem;
+  border-radius: 2rem;
+}
+.section8-button {
+  border: 1px solid black;
+  border-left: none;
+  height: 3rem;
+  padding: 1.5rem;
+  border-radius: 0rem 2rem 2rem 0rem;
+}
+
+/* others */
+h5 {
+  color: #eb0e57;
+}
+h1 {
+  color: #1b2244;
+}
+.it-service-card-grid {
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+/* importing fonts */
+@font-face {
+  font-family: font-medium;
+  src: url(Josefin_Sans/static/JosefinSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: font-light;
+  src: url(Josefin_Sans/static/JosefinSans-Light.ttf);
+}
+
+@font-face {
+  font-family: font-regular;
+  src: url(Josefin_Sans/JosefinSans-Regular.ttf);
+}
+
+@media screen and (max-width: 1000px) {
+  .notification-banner {
+    top: 70%;
+    left: 0;
+    max-height: max-content;
+    width: 100%;
+  }
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  .section3-box-intro > p {
+    padding-left: 30px;
+  }
+  .section3-box-intro > h3 {
+    padding-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .section1-gradient {
+    min-height: 40vh;
+  }
+  .section7 {
+    min-height: 45vh;
+  }
+}
