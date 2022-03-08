@@ -14,10 +14,31 @@
 </head>
 
 <body>
+  <!-- goto top button -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+  <i class="fa-solid fa-arrow-up h3"></i>
+  </button>
+  <script>
+    var mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
 
   <!-- Section 1 -->
   <section class="container-fluid section1-gradient">
-    <nav class="navbar navbar-expand-lg navbar-dark justify-content-end justify-content-xs-between">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark justify-content-end justify-content-xs-between">
       <div class="container">
         <a href="#" class="navbar-brand">
           <img src="assets/logo.png" alt="logo">
@@ -51,7 +72,7 @@
       </div>
       <button type="button" class="btn btn-primary btn-sm btn-lg bg-transparent border-light section1-button1 mx-3">Get Free Quote</button>
     </nav>
-    <div class="container">
+    <div class="container pt-5">
       <div class="row section1-row">
         <div class="col-12 col-md-5">
           <h1 class="display-4 text-white my-3">We provide best IT solutions</h1>
@@ -60,7 +81,7 @@
             Our Services
           </button>
         </div>
-        <div class="col-md-7 d-flex d-none d-sm-block">
+        <div class="col-md-7 d-flex d-none d-md-block">
           <img class="img-fluid section1-bgImg" src="assets/robot.png" alt="#">
         </div>
       </div>
@@ -120,7 +141,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-5 my-3 ">
+        <div class="col-sm-6 col-lg-5 my-3 section3-col2">
           <h1 class="display-4 my-3">Grow your business fast.</h1>
           <div class="row pt-3">
             <div class="col-4 col-md-3 mb-4">
@@ -164,7 +185,7 @@
           <p class="text-white fs-4 fs-md-6">No matter what's the business. Nanosoft has you convered with industry compilant solutions, customized to your company's specific needs.</p>
         </div>
       </div>
-      <div class="d-flex pt-5 g-4 it-service-card-grid flex-column flex-sm-row">
+      <div class="d-flex pt-5 g-4 it-service-card-grid flex-column flex-md-row">
         <div class="w-100 section4-box">
             <div class="position-relative mt-5 pt-4">
               <img class="position-absolute top-50 start-50 translate-middle" height="50px" src="assets/services.png" alt="services">
