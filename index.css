@@ -243,16 +243,35 @@ h1 {
 
 /* Media Queries */
 
-@media screen and (max-width:800px) and (min-width:600px){
+@media screen and (min-width: 800px) and (max-width: 992px) {
   .notification-banner{
-    bottom: 30%;
-    left: 5%;
     width: 90%;
+    left: 5%;
+    top: unset;
+    bottom: 36%;
+  }
+
+}
+
+@media screen and (max-width: 800px) and (min-width: 768px){
+  .notification-banner{
+    bottom: 35% !important;
+    left: 7% !important;
+    width: 85%;
     top: unset;
   }
 }
 
-@media screen and (max-width:599px){
+@media screen and (max-width:800px) and (min-width:570px){
+  .notification-banner{
+    bottom: 5%;
+    left: 5%;
+    width: 85%;
+    top: unset;
+  }
+}
+
+@media screen and (max-width:569px){
   .notification-banner{
     bottom: 20px;
     left: 5%;
